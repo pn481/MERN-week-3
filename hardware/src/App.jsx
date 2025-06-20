@@ -8,8 +8,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 export default App() 
   // All hooks and logic above
   const [count, setCount] = useState(0);
-
-  return (
+  
   <>
   <div>
         <a href="https://vite.dev" target="_blank">
@@ -26,7 +25,7 @@ export default App()
         </button>
       </div>
     </>
-  );
+
 
 function App() {
   const [count, setCount] = useState(0)

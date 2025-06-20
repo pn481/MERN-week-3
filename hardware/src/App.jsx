@@ -5,11 +5,34 @@ import './App.css'
 import React, { useEffect, createContext, useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
+import { useState } from 'react';
+
+export default App()
+  // All hooks and logic above
+  const [count, setCount] = useState(0);
+
+  return (
+  <>
+  <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+      </div>
+    </>
+  );
+
 function App() {
   const [count, setCount] = useState(0)
 
-
-  
 
 // ---------- Theme Context ----------
 const ThemeContext = createContext();

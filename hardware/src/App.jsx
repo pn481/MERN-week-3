@@ -256,7 +256,8 @@ const TaskManager = () => {
   );
 };
 
-export default App() { // All hooks and logic above...
+export default App()
+  // All hooks and logic above...
 return (
   <>
       <div>
@@ -281,6 +282,5 @@ return (
       </p>
     </>
   );
-};
 
 

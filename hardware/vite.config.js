@@ -1,5 +1,5 @@
 // vite.config.js
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc'
 import tailwindcss from '@tailwindcss/vite'
 
@@ -10,7 +10,12 @@ export default defineConfig({
     react(),
    tailwindcss(), 
   ],
-  base: '/,' // Important for Vercel routing
+  base: '/,', // Important for Vercel routing
+  build: {
+    rollupOptions: {
+      external: ['react-router-dom'],
+    },
+  },
 });
 
 

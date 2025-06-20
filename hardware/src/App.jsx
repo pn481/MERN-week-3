@@ -5,9 +5,7 @@ import './App.css'
 import React, { useEffect, createContext, useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-import { useState } from 'react';
-
-export default App()
+export default App() 
   // All hooks and logic above
   const [count, setCount] = useState(0);
 

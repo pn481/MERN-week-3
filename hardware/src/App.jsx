@@ -256,8 +256,9 @@ const TaskManager = () => {
   );
 };
 
+export default App() { // All hooks and logic above...
 return (
-    <>
+  <>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -279,6 +280,7 @@ return (
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
+};
 
-export default App
+
